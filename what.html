@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What did she do?</title>
+    <link href="whatstyles.css" rel="stylesheet">
+    <link href="heart.png" rel="icon">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="who.html" title="Who is she?">Who</a></li>
+            <li><a href="why.html" title="Why we love her?">Why</a></li>
+            <li><a href="index.html" title="Thank you page">Home</a></li>
+        </ul>
+    </header>
+    <h1>What have Ruchamah done?</h1>
+    <section class="top">
+        <p>Do you see the large sum of money that is accumulating in the page?
+            This is the amonunt of money Ruchamah will help us earn because of her teachings.
+            On a serious note, I find myself enjoying the time spent in her class, we all do.
+            From the weekly Operations Managers, Interactives, and other activities. We built
+            a better connection with each other, because of Ruchamah.
+        </p>
+    </section>
+    <div class="center-box">
+    <section class="container">
+        <div class="num" data-val="999">000</div>
+        <div class="text">Money earned with Ruchamah's help</div>
+    </section>
+    </div>
+    <section class="bottom">
+        <p>Her accomplishments as our BC instructor</p>
+    </section>
+    <section class="list">
+        <ul>
+            <li>Taught around half a hundred students in engaging lessons, resulting in students learning</li><br>
+            <li>Gave her students resources, leading them to a goal</li><br>
+            <li>Takes time out of her day to help students in need</li><br>
+            <li>Prepares her students to develop their skills</li><br>
+            <li>Loves building connections and encourge her students to do the same</li>
+        </ul>
+    </section>
+</body>
+<script>
+    let valueDisplays = document.querySelectorAll(".num");
+
+    const numberFormatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+    });
+    valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0.00;
+        setInterval(function(){
+            startValue += 2.01;
+            valueDisplay.textContent = numberFormatter.format(startValue);
+        });
+    });
+
+</script>
+</body>
+</html>

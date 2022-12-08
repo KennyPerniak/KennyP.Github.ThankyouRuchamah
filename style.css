@@ -1,0 +1,123 @@
+html {
+    background-color: darkgray;
+    color: white;
+}
+
+marquee {
+    font-size: 3em;
+}
+
+.grid-container {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: max-content;
+    grid-column-gap: 5%;
+    background-color: antiquewhite;
+    text-align: center;
+    border: 2px double red;
+    transition: 800ms;
+}
+
+.grid-container p {
+    color: black;
+    text-align: left;
+    padding: 10px;
+}
+
+.grid-container .grid1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.grid-container .grid2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.grid-container .grid3{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header {
+    display: block;
+    display: flex;
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.1em;
+    margin-left: 2em;
+    text-align: end;
+    
+}
+
+p {
+    border-left: 2px double red;
+    border-right: 2px double red;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+
+}
+
+a:hover {
+    color: aqua;
+    transition: 500ms;
+}
+
+.grid-container .list-grid {
+    color: black;
+    list-style: none;
+    border-left: 2px double red;
+    border-right: 2px double red;
+    padding: 1em;
+}
+
+.grid-container .middle {
+    text-align: center;
+}
+
+marquee {
+    color: white;
+    transition: 500ms;
+}
+
+marquee:hover {
+    color: pink;
+    transition: 500ms;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        transition: 800ms;
+    }
+    .grid1:nth-of-type(1) {
+        order: 2;
+    }
+    .grid2:nth-of-type(2) {
+        order: 4;
+    }
+    .grid3:nth-of-type(3) {
+        order: -1;
+    }
+    .start:nth-of-type(4) {
+        order: 3;
+    }
+    .middle:nth-of-type(5) {
+        order: 5;
+    }
+
+}

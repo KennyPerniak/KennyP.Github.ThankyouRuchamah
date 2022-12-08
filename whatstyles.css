@@ -1,0 +1,121 @@
+html {
+    background-color: beige;
+}
+
+header {
+    display: block;
+    display: flex;
+}
+
+header ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.1em;
+    margin-left: 2em;
+    text-align: end;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+}
+
+a:hover {
+    color: aqua;
+    transition: 500ms;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    width: 15em;
+    height: 4em;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    position: relative;
+    padding: 1em;
+    margin-right: 1em;
+    justify-content: space-around;
+    float: left;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num {
+    color: lightgreen;
+    display: grid;
+    place-items: center;
+    font-size: 2em;
+}
+
+.text {
+    color: lightgreen;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+p {
+    padding-right: 20px;
+    padding-left: 10px;
+    text-align: center;
+    width: 50%;
+    font-size: 1.1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border: 2px red solid;
+    border-radius: 1em;
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom p {
+    font-size: 1.3em;
+    font-weight: bold;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+}
+
+.list {
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 550px){
+    p {
+        max-width: 100%;
+        padding-top: 1em;
+        font-size: 1em;
+    }
+    .container {
+        width: 90%;
+    }
+}

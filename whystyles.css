@@ -1,0 +1,307 @@
+html {
+    background-color: beige;
+}
+
+header {
+    display: block;
+    display: flex;
+}
+
+header ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.1em;
+    margin-left: 2em;
+    
+}
+
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+
+}
+
+a:hover {
+    color: aqua;
+    transition: 500ms;
+}
+
+.words {
+    display: flex;
+    justify-content: center;
+    justify-items: center
+}
+
+p {
+    margin-top: 5em;
+    padding: 2em;
+    width: 40%;
+    font-size: 1.1em;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 1em;
+}
+
+.love {
+    display: flex;
+    justify-content: center;
+    justify-items: center
+}
+
+.heart {
+    margin-left: 2em;
+    margin-right: 2em;
+    background: red;
+    height: 2.5em;
+    width: 2.5em;
+    transform: rotate(-45deg);
+    box-shadow: -1em 1em 3em red;
+    animation: heart .2s linear infinite;
+}
+
+@keyframes heart {
+    0%{transform: rotate(-45deg) scale(1.07);
+    }
+    80%{transform: rotate(-45deg) scale(1.0);
+    }
+    100%{transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+
+.heart::before {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: -1em -1em 3em red;
+    animation: heart .2s linear infinite;
+}
+
+.heart::after {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    right: -50%;
+    border-radius: 50%;
+    box-shadow: 1em 1em 3em red;
+    animation: heart .2s linear infinite;
+}
+
+.heart2 {
+    margin-left: 2em;
+    margin-right: 2em;
+
+    background: red;
+    height: 2.5em;
+    width: 2.5em;
+    transform: rotate(-45deg);
+    box-shadow: -1em 1em 3em red;
+    animation: heart .4s linear infinite;
+}
+
+.heart2::before {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: -1em -1em 3em red;
+    animation: heart .4s linear infinite;
+}
+
+.heart2::after {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    right: -50%;
+    border-radius: 50%;
+    box-shadow: 1em 1em 3em red;
+    animation: heart .4s linear infinite;
+}
+.heart3 {
+    margin-left: 2em;
+    margin-right: 2em;
+
+    background: red;
+    height: 2.5em;
+    width: 2.5em;
+    transform: rotate(-45deg);
+    box-shadow: -1em 1em 3em red;
+    animation: heart .8s linear infinite;
+}
+
+.heart3::before {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: -1em -1em 3em red;
+    animation: heart .8s linear infinite;
+}
+
+.heart3::after {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    right: -50%;
+    border-radius: 50%;
+    box-shadow: 1em 1em 3em red;
+    animation: heart .8s linear infinite;
+}
+.heart4 {
+    margin-left: 2em;
+    margin-right: 2em;
+
+    background: red;
+    height: 2.5em;
+    width: 2.5em;
+    transform: rotate(-45deg);
+    box-shadow: -1em 1em 3em red;
+    animation: heart .4s linear infinite;
+}
+
+.heart4::before {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: -1em -1em 3em red;
+    animation: heart .4s linear infinite;
+}
+
+.heart4::after {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    right: -50%;
+    border-radius: 50%;
+    box-shadow: 1em 1em 3em red;
+    animation: heart .4s linear infinite;
+}
+.heart5 {
+    margin-left: 2em;
+    margin-right: 2em;
+    background: red;
+    height: 2.5em;
+    width: 2.5em;
+    transform: rotate(-45deg);
+    box-shadow: -1em 1em 3em red;
+    animation: heart .2s linear infinite;
+}
+
+
+.heart5::before {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: -1em -1em 3em red;
+    animation: heart .2s linear infinite;
+}
+
+.heart5::after {
+    background: red;
+    content: "";
+    position: absolute;
+    height: 2.5em;
+    width: 2.5em;
+    right: -50%;
+    border-radius: 50%;
+    box-shadow: 1em 1em 3em red;
+    animation: heart .2s linear infinite;
+}
+
+@media only screen and (max-width: 550px){
+    header{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    
+    header ul {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        padding-left: 0em;
+    }
+
+    header ul li {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        margin-right: 2em;
+    }
+    
+
+    p {
+        font-size: 1em;
+        width: 50%;
+    }
+    .heart{
+        visibility: hidden;
+        width: 0em;
+        margin-left: 0em;
+    }
+    .heart2 {
+        visibility: hidden;
+        width: 0em;
+    }
+    .heart3{
+        visibility: visible;
+    }
+    .heart3::after {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    .heart4{
+        visibility: hidden;
+        width: 0em;
+    }
+    .heart5{
+        visibility: hidden;
+        width: 0em;
+        margin-right: 0em;
+    }
+}
+
+@media only screen and (max-width: 580px){
+
+    .heart{
+        visibility: hidden;
+    }
+
+    .heart5{
+        visibility: hidden;
+    }
+}
+
